@@ -1,5 +1,6 @@
 package org.free.software.model.temps;
 
+import org.free.software.model.travailleurs.IdentiteTravailleur;
 import org.free.software.model.travailleurs.Travailleur;
 
 import java.time.YearMonth;
@@ -9,10 +10,18 @@ import java.time.YearMonth;
  */
 public class MoisTravailleur {
     YearMonth mois;
-    Travailleur travailleur;
+    IdentiteTravailleur travailleur;
 
-    public MoisTravailleur(YearMonth mois, Travailleur travailleur) {
+    public MoisTravailleur(YearMonth mois, IdentiteTravailleur travailleur) {
         this.mois = mois;
         this.travailleur = travailleur;
+    }
+
+    public YearMonth getMois() {
+        return mois;
+    }
+
+    public IdentiteTravailleur getIdentiteTravailleur() {
+        return travailleur;
     }
 }
