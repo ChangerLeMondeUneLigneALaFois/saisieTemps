@@ -43,7 +43,7 @@ public class FeuilleDeTemps {
     }
 
     public boolean estComplete() {
-        return false;
+        return nombreDeJoursManquants() == 0;
     }
 
     public Integer nombreDeJoursManquants() {
